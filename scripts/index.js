@@ -68,8 +68,8 @@
         var latitude = position.coords.latitude,
             longitude = position.coords.longitude,
             cordinates = latitude + longitude;
-        alert('Latitude: ' + latitude + '\n' + 'Longitude: ' + longitude + '\n');
-        document.getElementById('google-map').setAttribute('src, http://maps.google.co.uk?q=' + cordinates + '&z=60&output=embed')
+        //alert('Latitude: ' + latitude + '\n' + 'Longitude: ' + longitude + '\n');
+        document.getElementById('google-map').setAttribute('src, http://maps.google.co.uk?q=' + cordinates + '&z=60&output=embed');
     };
 
     // onError Callback receives a PositionError object
