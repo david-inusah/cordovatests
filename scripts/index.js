@@ -78,15 +78,20 @@
         alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
     }
 
-    //watchPosition
-
-    var onWatchSuccess = function (position) {
-        var element = document.getElementById('divWatchMeMove');
-        element.innerHTML = 'Latitude: ' + position.coords.latitude + '<br />' + 'Longitude: ' + position.coords.longitude + '<br />' + '<hr />' + element.innerHTML;
-    };
-
-    function onWatchError(error) {
-        alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+    document.getElementById('geolocator').onclick=function(){
+        navigator.geolocation.getCurrentPosition(onSuccess);
+        return false;
     }
 
-})();
+    //watchPosition
+
+    //var onWatchSuccess = function (position) {
+    //    var element = document.getElementById('divWatchMeMove');
+    //    element.innerHTML = 'Latitude: ' + position.coords.latitude + '<br />' + 'Longitude: ' + position.coords.longitude + '<br />' + '<hr />' + element.innerHTML;
+    //};
+    //
+    //function onWatchError(error) {
+    //    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+    //}
+
+});
