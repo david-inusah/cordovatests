@@ -16,11 +16,11 @@
             });
         }
 
-        document.getElementById("geolocator").addEventListener("click", function () {
-            navigator.geolocation.getCurrentPosition(onSuccess, onError, {
-                enableHighAccuracy: true
-            });
-        });
+        //document.getElementById("geolocator").addEventListener("click", function () {
+        //    navigator.geolocation.getCurrentPosition(onSuccess, onError, {
+        //        enableHighAccuracy: true
+        //    });
+        //});
         $(function () {
             document.getElementById("barcode").addEventListener("click", function () {
                 cordova.plugins.barcodeScanner.scan(
