@@ -36,14 +36,14 @@
         });
 
 
-        //watchPosition
-        var watchId = navigator.geolocation.watchPosition(onWatchSuccess, onWatchError, {
-            timeout: 30000
-        });
-
-        document.getElementById("clearWatchbtn").addEventListener("click", function () {
-            navigator.geolocation.clearWatch(watchID);
-        });
+        ////watchPosition
+        //var watchId = navigator.geolocation.watchPosition(onWatchSuccess, onWatchError, {
+        //    timeout: 30000
+        //});
+        //
+        //document.getElementById("clearWatchbtn").addEventListener("click", function () {
+        //    navigator.geolocation.clearWatch(watchID);
+        //});
 
     };
 
