@@ -16,7 +16,7 @@
             });
         }
 
-        document.getElementById("geolocationdata").addEventListener("click", function () {
+        document.getElementById("geolocator").addEventListener("click", function () {
             navigator.geolocation.getCurrentPosition(onSuccess, onError, {
                 enableHighAccuracy: true
             });
