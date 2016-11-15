@@ -16,11 +16,11 @@
             });
         }
 
-        //document.getElementById("geolocator").addEventListener("click", function () {
-        //    navigator.geolocation.getCurrentPosition(onSuccess, onError, {
-        //        enableHighAccuracy: true
-        //    });
-        //});
+        document.getElementById("geolocator").addEventListener("click", function () {
+            navigator.geolocation.getCurrentPosition(onSuccess, onError, {
+                enableHighAccuracy: true
+            });
+        });
         $(function () {
             document.getElementById("barcode").addEventListener("click", function () {
                 cordova.plugins.barcodeScanner.scan(
@@ -68,8 +68,8 @@
         var latitude = position.coords.latitude,
             longitude = position.coords.longitude,
             cordinates = latitude + longitude;
-        //alert('Latitude: ' + latitude + '\n' + 'Longitude: ' + longitude + '\n');
-        document.getElementById('google-map').setAttribute('src, http://maps.google.co.uk?q=' + cordinates + '&z=60&output=embed');
+        alert('Latitude: ' + latitude + '\n' + 'Longitude: ' + longitude + '\n');
+        document.getElementById("google-map").setAttribute("src, http://maps.google.co.uk?q=" + cordinates + "&z=60&output=embed");
     };
 
     // onError Callback receives a PositionError object
@@ -78,13 +78,8 @@
         alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
     }
 
-    document.getElementById('geolocator').onclick=function(){
-        navigator.geolocation.getCurrentPosition(onSuccess);
-        return false;
-    }
-
     //watchPosition
-
+    //
     //var onWatchSuccess = function (position) {
     //    var element = document.getElementById('divWatchMeMove');
     //    element.innerHTML = 'Latitude: ' + position.coords.latitude + '<br />' + 'Longitude: ' + position.coords.longitude + '<br />' + '<hr />' + element.innerHTML;
@@ -94,4 +89,4 @@
     //    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
     //}
 
-});
+})();
