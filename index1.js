@@ -1,9 +1,6 @@
 /**
  * Created by owner on 11/15/2016.
  */
-/**
- * Created by owner on 11/15/2016.
- */
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
